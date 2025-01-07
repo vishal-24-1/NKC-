@@ -4,7 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Demand from "./pages/Demand";
 import Inventory from "./pages/Inventory";
 import Recipes from "./pages/Recipes";
-import BreakevenCalculator from "./pages/BECalculator";
+//import BreakevenCalculator from "./pages/BECalculator";
 import BEV from "./pages/BEV";
 import Analytics from "./pages/Analytics";
 import Settings from "./pages/Settings";
@@ -53,6 +53,7 @@ const Sidebar = () => (
           Recipes
         </NavLink>
       </li>
+      {/*
       <li>
         <NavLink
           to="/becalculator"
@@ -63,6 +64,7 @@ const Sidebar = () => (
           Breakeven Calculator
         </NavLink>
       </li>
+      */}
       <li>
         <NavLink
           to="/bev"
@@ -123,7 +125,7 @@ const App = () => {
             <Route path="/demand" element={<Demand />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/recipes" element={<Recipes />} />
-            <Route path="/becalculator" element={<BreakevenCalculator />} />
+            {/*<Route path="/becalculator" element={<BreakevenCalculator />} />*/}
             <Route path="/BEV" element={<BEV />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/settings" element={<Settings />} />
